@@ -28,12 +28,19 @@ for (i = 0; i < names.length; i++) {
 // ==========================================
 
 const numbers = [2, 4, 5, 29, 38];
-let outputNumbers = numbers;
+//
 
-for (i = 0; i < numbers.length; i++) {
-    outputNumbers = numbers[i] * 3
-    console.log(outputNumbers)
+for (let i=0; i< numbers.length; i++) {
+    numbers[i] = Math.imul(numbers[i], 3);
 }
+console.log(numbers);
+
+
+// let outputNumbers = numbers;
+// for (i = 0; i < numbers.length; i++) {
+//     outputNumbers = numbers[i] * 3
+//     console.log(outputNumbers)
+// }
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
@@ -51,12 +58,17 @@ for (i = 0; i < numbers.length; i++) {
 
 const squares = [30, 2, 8, 24, 11];
 
-let outputSquares = squares;
+// let outputSquares = squares;
+//
+// for (i = 0; i < squares.length; i++) {
+//     outputSquares = Math.pow(squares[i], 3)
+//     console.log(outputSquares)
+// }
 
-for (i = 0; i < squares.length; i++) {
-    outputSquares = Math.pow(squares[i], 3)
-    console.log(outputSquares)
+for (let i=0; i< squares.length; i++) {
+    squares[i] = Math.pow(squares[i], 3);
 }
+console.log(squares);
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [30, 2, 8, 24, 11];
