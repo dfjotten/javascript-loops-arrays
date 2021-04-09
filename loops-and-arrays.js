@@ -6,13 +6,13 @@
 
 const names = ["Henk", "Piet", "Fred", "Joop"];
 
-let outputNames = names;
-console.log(names)
 
-for (i = 0; i < names.length; i++) {
-    outputNames = names[i] + "je"
-    console.log(outputNames)
+for (let i = 0; i < names.length; i++) {
+    names[i] = names[i] + "je"
 }
+    console.log(names);
+
+
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
